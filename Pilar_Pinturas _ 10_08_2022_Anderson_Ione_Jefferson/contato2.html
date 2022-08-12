@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="favIcon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favIcon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favIcon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favIcon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favIcon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favIcon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favIcon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favIcon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favIcon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favIcon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favIcon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favIcon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./CSS/styleContact.css">
+    <title>Pilar Pinturas</title>
+
+</head>
+<body>
+    <header class="">
+        <div class="container positionHeader">
+            <img src="IMG/Home/pilar-logo.png" alt="Pilar Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a>serviços</a></li>
+                    <li><a href="portifolio.html">portfólio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="flexbox container">
+            <div class="right">
+                <h2>Como Posso Ajudar?</h2>
+                <p>
+                    Ligue para nós na Pilar Pinturas por meio do telefone/whatsapp <span>(19)95020-1275</span>  ou se preferir preencha o nosso formulário.
+                </p>
+                <p>
+                    Depois da análise de suas necessidades, você receberá o orçamento em mãos ou por e-mail, enviado pelo nosso representante.
+                </p>
+                <p>
+                    <span>Onde Estamos:</span>Rua Sacramento nº 490 – Centro – Campinas/SP
+                </p>
+            </div>       
+            <div class="box">  
+                <form>             
+                    <fieldset>
+                        <legend><b>Fórmulário do Cliente</b></legend>
+                        <h4>Por favaor, informe os seus dados:</h4>
+                        <div class="inputBox">
+                            <input type="text" name="ome" id="nome" class="inputUser" required placeholder="Nome">
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="empresa" id="empresa" class="inputUser" required placeholder="Empresa">                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="email" id="email" class="inputUser" required placeholder="Email">          
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" required placeholder="Telefone">
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="Assunto" id="Assunto" class="inputUser" required placeholder="Assunto">
+                        </div>
+                        <div class="inputBox">
+                            <text type="text" name="Assunto" id="assunto" class="inputUser" required placeholder="Assunto">
+                        </div>
+                        <textarea name="" id=""  rows="10" placeholder="Digite sua mensagem"></textarea>
+                       <button class="submit" type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        </main>
+    <footer> 
+    <section class="copyRigth">
+        <img src="IMG/Home/pilar-logo.png" alt="Pilar Logo">
+        <p>2022 &copy; todos os direitos reservados</p>
+    </section>
+    </footer>
+    <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+    }
+    </script>    
+</body>
+</html>

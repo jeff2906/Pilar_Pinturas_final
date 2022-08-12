@@ -1,0 +1,458 @@
+/* Formatação geral da página */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+/* Formatação do Header */
+
+header {
+    padding: 10px 0;
+    background-color: #0D0D0D;
+}
+.positionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 10em;
+}
+
+nav {
+    width: 50%;
+    text-align: right;
+}
+
+nav ul li {    
+    display: inline-block;
+    margin-left: 3em;
+}
+
+ul li a {
+    font-weight: bold;
+    color: #fff000;
+    text-decoration: none;
+}
+
+nav ul li a:after {
+    content:'';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #fff000;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Formatação Carousel */
+.carouselPosition {
+    position: relative;
+}
+
+.carouselPosition img {
+    width: 100%;
+    height: 100%;
+}
+
+.carouselPosition .pageTitle{
+    width: 100%;
+    height: 99.5%;
+    position: absolute;
+    color: #fff000;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pageTitle h1 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    text-decoration: underline  #fff000;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.ptextStyle {
+    text-transform: lowercase;
+    font-size: 4vw;
+    line-height: 2.5vw;
+    text-shadow: 3px 3px 3px #000;
+}
+
+/* Formatação do Main */
+
+.heightMain{
+    height: auto;
+}
+
+/* Formatação Seções */
+
+.servicosSection {
+    height: auto;
+    text-align: center;
+    padding: 3em 0;
+}
+
+.servicosSection h2 {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
+
+.servicosSection p {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+/* Formatação Img Seções Serviços */
+.boxIconsServicos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.figureIcon {
+    padding: 20px 40px;
+    margin: 1em 0;
+}
+
+.boxIconsServicos img{
+    margin: 0 20px;
+    width: 170px;
+}
+
+figcaption {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Formatação Contato */
+
+.contatoSection {
+    font-size: 2.5em;
+    background: url(../IMG/Home/bg2.jpg) fixed;
+    height: 300px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1;
+}
+
+.contatoSection h2 {
+    text-shadow: 3px 3px 3px #000;
+    margin: 0 0.5em;
+}
+
+.btnInput {
+    font-size: 0.5em;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #000;
+    color: #ffffff;
+    margin: 0 0.5em;
+}
+
+.btnInput:hover {
+    transform: scale(1.1,1.1)
+}
+
+/* Formatação Portfólio */
+
+.portfolioCard {
+    padding: 3em 0;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolioCard figure {
+    width: 300px;
+    height: auto;
+    box-shadow: 3px 3px 3px #c6c6c6;
+    margin-bottom: 1.5em;
+}
+
+.portfolioCard figcaption {
+    padding: 10px 0;
+}
+
+.imagemPortfolio {
+    width: 100%;
+}
+
+.ctaPortfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:  wrap;
+}
+
+.ctaPortfolio p {
+    margin: 0.5em 1em;
+}
+
+.btnInputContato {
+    font-size: 1em;
+}
+
+/*Area Simulador*/
+
+.pageTitle{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.backgroundSimulador {
+    background: url(../IMG/Home/simulator.jpg) no-repeat;
+    height: 50vh;
+    background-size: cover;
+    background-position: bottom;
+    color:#ffffff ;
+}
+
+.btnInputSimulador {
+    font-size: 1em;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #000;
+}
+
+.btnInputSimulador a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btnInputSimulador:hover {
+    transform: scale(1.1,1.1)
+}
+
+.backgroundSimulador h2, .backgroundSimulador p {
+    text-shadow: 3px 3px 3px #000;
+}
+
+
+/* Formatação Seção Parceiros */
+
+.sectionLogoTintas{
+    margin: 3em 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1;
+}
+.sectionLogoTintas div{
+    margin: 1em 0;
+}
+.tamanhoLogoTintas {
+    width: 150px;
+}
+
+/* Formatação do Rodapé */
+footer {
+    padding: 15px 0;
+    background-color: #0D0D0D;
+    color: #fff000;
+}
+
+form {
+    width: 35%;
+}
+
+fieldset {
+    padding: 2em 0;
+}
+
+fieldset div {
+    margin: 0.5em 0;
+}
+
+form input {
+    height: 3em;
+}
+
+form input, form textarea {
+    width: 90%;
+}
+
+.positionFooterForm {
+    margin: 5em 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.positionFooterForm img {
+    width: 28em;
+}
+
+
+.positionFooter {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.positionFooter div {
+    width: calc(100% /4 );
+}
+
+.positionFooter p {
+    margin-top: 2em;
+    font-size: 1em;
+}
+.tamanhoImagemSocialMedia {
+    width: 2.5em;
+}
+.btnColor {
+    background-color: #fff000;
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.copyRigth {
+    margin: 1em 0;
+    text-align: center;
+    font-size: 0.68em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 991px) {
+
+    /* Formatação do Header */
+
+    header {
+        padding: 20px 0 10px 0;
+        background-color: #0D0D0D;
+    }
+    
+    .positionHeader {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    nav {
+        width: auto;
+        text-align: center;
+        margin: 1em 0 0.5em 0;
+    }
+    
+    nav ul li {    
+        margin: 0 1em;
+    }
+
+    nav ul li a:after {
+        content:'';
+        display: block;
+        padding-bottom: 0.2rem;
+        border-bottom: 2px solid #fff000;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+    
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+    }
+    
+    /* Formatação Carousel */
+
+    .carouselPosition img {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .pageTitle h1 {
+        font-size: 12vw;
+    }
+    
+    .ptextStyle {
+        font-size: 4.7vw;
+    }
+
+    /* Formatação Img Seções Serviços */
+  
+    .boxIconsServicos img{
+        width: 120px;
+    }
+
+    /* Portfólio */
+
+    .portfolioCard figure {
+        width: 400px;
+        height: auto;
+    }
+
+    /*Area Simulador*/
+
+    .btnInputSimulador {
+        font-size: 1em;
+        width: 250px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: #000;
+    }
+
+    .positionFooterForm {
+        flex-wrap: wrap;
+    }
+
+    /*Fale Conosco*/
+
+    form {
+        width: 75%;
+    }
+    
+    .imgMedia::after {
+        content: url(../favIcon/favicon-32x32.png);
+    }
+
+    .positionFooterForm img {
+        display: none;
+    }
+
+    .tamanhoImagemSocialMedia {
+        width: 1.5em;
+    }
+
+    .positionFooter p {
+        font-size: 0.8em;
+    }
+
+    .servicosSectionMedia {
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+}
+
+

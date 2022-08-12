@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Formatação do Header */
+
+header {
+    padding: 10px 0;
+    background-color: #000;
+}
+.positionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 10em;
+}
+
+nav {
+    width: 75%;
+    text-align: right;
+}
+
+nav ul li {    
+    display: inline-block;
+    margin-left: 3em;
+}
+
+
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff000;
+    margin: 0 ;
+}
+
+
+/*Formatção seções*/
+.servicosSection {
+    height: auto;
+    text-align: center;
+    padding: 3em 0;
+}
+
+.servicosSection h2 {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
+
+.tamanhoImagemSocialMedia {
+    width: 3%;
+}
+
+.ptextStyle {
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+h1, h2{
+    color: yellow;
+    text-align: center; 
+}
+
+
+/* Formatação Portfólio */
+.portifolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .portifolio{
+    box-sizing: border-box;
+    display: grid;
+    grid: repeat(5, auto) / auto-flow;
+    justify-content: space-around;
+} */
+
+
+figure {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1em 0.5em;
+    width: 28em;
+    box-shadow: 3px 3px 17px rgb(155, 155, 155);
+    border-radius: 3%;
+    margin: 1em;
+}
+
+
+.portifolio figure img {
+    width: 95%;
+    margin: 0.5em;
+}
+
+
+.portifolio figcaption{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 900;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 991px) {
+
+    /* Formatação do Header */
+
+    header {
+        padding: 20px 0 10px 0;
+        background-color: #0D0D0D;
+    }
+    
+    .positionHeader {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    nav {
+        width: auto;
+        text-align: center;
+        margin: 1em 0 0.5em 0;
+    }
+    
+    nav ul li {    
+        margin: 0 1em;
+    }
+
+    nav ul li a:after {
+        content:'';
+        display: block;
+        padding-bottom: 0.2rem;
+        border-bottom: 2px solid #fff000;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+    
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+    }
+    
+    /* Formatação Carousel */
+
+    .carouselPosition img {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .pageTitle h1 {
+        font-size: 12vw;
+    }
+/*     
+    .ptextStyle {
+        font-size: 1.5em;
+    } */
+}
